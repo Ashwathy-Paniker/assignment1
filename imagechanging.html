@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>IMAGE CHANGE</title>
+        <script>
+            array=["images/bootstrap.png","images/angular.png","images/node.png","images/react.png","images/vue.jpg"];
+            count=0;
+            function counter(){
+               document.getElementById("timer_img").src=array[count];
+               count++;
+               if(count==5){
+                   count=0;
+               }
+            }
+            function start(){
+                interval= setInterval(counter,1000);
+            }
+            function stop(){
+                clearInterval(interval);
+                count=0;
+            }
+        </script>
+    </head>
+    <body>
+        <H2>---IMAGE CHANGE---</H2><BR/><BR/>
+        <img src="images/start.jpg" id="timer_img"  width="400px" height="400px"><br>
+        <button onclick="start()">START</button><br/><br/>
+        <button onclick="stop()">STOP</button>
+
+    </body>
+</html>

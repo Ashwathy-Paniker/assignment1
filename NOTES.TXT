@@ -1,0 +1,44 @@
+->Write Javascript code in <script>.....</script> tag
+
+->prompt() : alert box with input field
+->alert()  : alert box with output msg
+
+->document.write() : output display on page
+->console.log() : output display on console
+
+->parseInt() : can be used to convert numbers into integer.
+->var : used to initialize variable , it has  local accessiblity (within function)
+->we can initialize variable without var too.no compulsory to have datatype
+
+-> FUNCTIONS:
+          -> function function_name()
+          {
+
+          }
+
+->document.getElementById() :
+         -> syntax: document.getElementById(elementID)
+         ->returns the element that has the ID attribute with the specified value.
+
+->innerHTML :
+         ->sets or returns the HTML content.
+         ->syntax:
+             ->Return the innerHTML property:
+                 HTMLElementObject.innerHTML
+         ->syntax:
+             ->Set the innerHTML property:
+                 HTMLElementObject.innerHTML=text;
+
+->document.write("&nbsp") : for new line
+->document.write("</br>") : for next line
+
+->setInterval(): 
+         ->calls a function or evaluates an expression at specified intervals (in milliseconds).
+         ->Execute until the clearinterval() is called.
+         ->syntax: setInterval(function, milliseconds, param1, param2, ...);
+
+->clearInterval():
+         ->clears a timer set with the setInterval() method.
+         ->clearInterval(myVar);
+
+         

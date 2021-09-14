@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function vali(){
+                var name=document.getElementById("t1").value;
+                var mobile=document.getElementById("t2").value;
+                var email=document.getElementById("t3").value;
+                var feedback=document.getElementById("t4").value;
+                var expName=/^[a-zA-Z]{2,100}$/;
+                var expMobile=/^[6-9][0-9]{9}$/;
+                var emailRege=/^[a-z0-9]+@+[a-z0-9._]+$/;
+                var expfeed=/^[a-zA-Z0-9]{10,200}$/;
+
+                if(!(expName.test(name)))
+                {
+                    document.getElementById("t1").focus();
+                    alert("Only Alphabets are allowed");
+                }
+                else if(!(expMobile.test(mobile)))
+                {
+                    document.getElementById("t2").focus();
+                    alert("Only 10 digits are allowed");
+                }
+                else if(!(emailRege.test(email)))
+                {
+                    document.getElementById("t3").focus();
+                    alert("Use @ symbol");
+                }
+                else if(!(expfeed.test(feedback)))
+                {
+                    document.getElementById("t4").focus();
+                    alert("Min 10 length needed");
+                }
+                else{
+                    alert("Form Submitted Successfully");
+                }
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Validation Form</h1>
+        Name : <input type="text" id="t1"><br><br>
+        Mobile No : <input type="text" id="t2"><br><br>
+        Email Id : <input type="email" id="t3"><br><br>
+        Feedback : <textarea max="200" min="20" id="t4"></textarea>
+        <br><br>
+        
+        <button onclick="vali()">Submit</button>
+
+       
+        
+    </body>
+</html>

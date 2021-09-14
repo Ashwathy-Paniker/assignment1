@@ -1,0 +1,62 @@
+<html>
+    <head>
+       <title>CREATE ELEMENT DEMO</title>
+       <script>
+            function total(){
+                var num1=Number(document.getElementById("t1").value);
+                var num2=Number(document.getElementById("t2").value);
+                var num3=Number(document.getElementById("t3").value);
+                var num4=Number(document.getElementById("t4").value);
+                var num5=Number(document.getElementById("t5").value);
+                document.getElementById("t6").value= num1+num2+num3+num4+num5;
+
+            }
+            function percent(){
+                 per=Number(document.getElementById("t6").value/5);
+                 document.getElementById("t7").value= per;
+
+
+            }
+            function grade(){
+                if(per>=80){
+                    document.getElementById("t8").value='A';
+                    alert("Congratulation!!")
+                }
+                else if(per<80 && per>60){
+                    document.getElementById("t8").value='B';
+                    alert("Congratulation!!")
+
+                }
+                else if(per<60 && per>45){
+                    document.getElementById("t8").value='C';
+                    alert("Congratulation!!")
+
+                }
+                else{
+                    document.getElementById("t8").value='FAIL :)';
+                    alert("Hard Luck !! Try next time")
+
+                }
+            }
+              
+              
+       </script> 
+    </head>
+    <body>
+
+         <h2>RESULT PAGE</h2><hr>
+         <table>
+             <tr><td>ENGLISH : <input type="text" id="t1"/></td></tr>
+             <tr><td>MATHS : <input type="text" id="t2"/></td></tr>
+             <tr><td>SCIENCE : <input type="text" id="t3"/></td></tr>
+             <tr><td>HISTORY : <input type="text" id="t4"/></td></tr>
+             <tr><td>GEOGRAPHY : <input type="text" id="t5"/></td></tr>
+             <tr><td><button onclick="total()">CHECK TOTAL</button>:<input type="text" id="t6"/></td></tr>
+             <tr><td><button onclick="percent()">CHECK PERCENTAGE</button>:<input type="text" id="t7"/></td></tr>
+             <tr><td><button onclick="grade()">CHECK GRADE</button> :<input type="text" id="t8"/></td></tr>
+            
+   
+         </table>
+         
+    </body>
+</html>

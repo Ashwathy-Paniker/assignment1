@@ -1,0 +1,24 @@
+<html>
+    <head>
+       <script>
+              
+              function read(){
+                  var elem = document.getElementById("p1");
+                  alert("Hello")
+                  elem.innerHTML="<h3>Hi HOW ARE YOU???</h3>";
+              }
+              function update(){
+                  var elem = document.getElementById("p1");
+                  elem.innerHTML="<h3>Yes I'm Fine !!</h3>";
+                  elem.style.border=" 2px solid black";
+              }
+              
+              
+       </script>
+    </head>
+    <body>
+        <p id="p1"></p><br><br>
+        <button onclick="read()" >Read Data</button>
+        <button onclick="update()">Update Data</button>
+    </body>
+</html>

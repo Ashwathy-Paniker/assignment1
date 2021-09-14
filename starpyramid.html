@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function star(rows)
+            {
+                for ( i =1; i <= rows; i++)  
+                    {  
+                        for ( j = 1; j <= rows - i; j++)  
+                        {  
+                            document.write("&nbsp");   
+                        }  
+                        // use for loop where k is less than equal to (2 * i -1)  
+                        for ( k = 1; k <= ( 2 * i - 1); k++)  
+                        {  
+                            document.write("*"); // print the Star  
+                        }  
+                        document.write("<br/>");  
+                    }  
+            }
+        </script>
+        
+    </head>
+<body>
+
+<h2>JavaScript Star Pyramid </h2>
+<input type="button" value="Click here to get star Pyramid" onclick="star(5)"/>
+
+
+</body>
+</html>

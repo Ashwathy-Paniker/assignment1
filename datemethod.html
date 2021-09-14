@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Date Method Demo</h2>
+<p>The internal clock in JavaScript counts from midnight January 1, 1970.</p>
+
+<button id="demo1" onclick="gettime()">getTime</button>
+<button id="demo2" onclick="getfullyear()">getFullYear</button>
+<button id="demo3" onclick="getyear()">getYear</button>
+<button id="demo4" onclick="getmonth()">getMonth</button>
+<button id="demo5" onclick="getdate()">getDate</button>
+<button id="demo6" onclick="gethours()">getHours</button>
+<button id="demo7" onclick="getminutes()">getMinutes</button>
+<button id="demo8" onclick="getmilliseconds()">getMilliseconds</button>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+
+
+<script>
+const d = new Date();
+function gettime()
+{
+document.getElementById("demo1").innerHTML = d.getTime();
+}
+function getfullyear(){
+document.getElementById("demo2").innerHTML = d.getFullYear();
+}
+function getyear(){
+document.getElementById("demo3").innerHTML = d.getYear();
+}
+function getmonth(){
+document.getElementById("demo4").innerHTML = d.getMonth();
+}
+function getdate(){
+    document.getElementById("demo5").innerHTML = d.getDate();
+}
+function gethours(){
+    document.getElementById("demo6").innerHTML = d.getHours();
+}
+function getminutes(){
+    document.getElementById("demo7").innerHTML = d.getMinutes();
+}
+function getmilliseconds(){
+    document.getElementById("demo8").innerHTML = d.getMilliseconds();
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript </h2>
+<h3>RESULT ANNOUNCEMENT DEMO</h3>
+
+
+<script>
+    var s1= parseInt(prompt("Enter SUBJECT1"));
+    var s2= parseInt(prompt("Enter SUBJECT2"));
+    var s3= parseInt(prompt("Enter SUBJECT3"));
+    var s4= parseInt(prompt("Enter SUBJECT4"));
+    var s5= parseInt(prompt("Enter SUBJECT5"));
+    var total= parseInt(s1 + s2 + s3 + s4 + s5);
+    var percent=parseInt((total/5));
+     if(percent>=80)
+     {
+         alert("Your Total Score is :"+total);
+         alert("Percentage:"+percent);
+         alert("Grade A");
+         console.log("Congrats you scored well!");//printing on console part
+
+     }
+     else if(percent<80 && percent>60){
+        alert("Your Total Score is :"+total);
+        alert("Percentage:"+percent);
+        alert("Grade B");
+     }
+     else if(percent<60 && percent>40){
+        alert("Your Total Score is :"+total);
+        alert("Percentage:"+percent);
+        alert("Grade C");
+     }
+     else{
+        alert("Your Total Score is :"+total);
+        alert("Percentage:"+percent);
+        alert("Fail!! ");
+     }
+
+
+</script>
+
+</body>
+</html>

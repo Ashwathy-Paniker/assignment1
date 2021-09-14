@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math Method Demo</h2>
+
+<button id="demo1" onclick="pi()">PI</button>
+<button id="demo2" onclick="round()">ROUND(4.4)</button>
+<button id="demo3" onclick="pow()">POWER(8,2)</button>
+<button id="demo4" onclick="sqrt()">SQUARE(64)</button>
+<button id="demo5" onclick="abs()">ABSOLUTE(-4,7)</button>
+<button id="demo6" onclick="sin()">SIN(90 * Math.PI / 180)</button>
+<button id="demo7" onclick="cos()">COS(90 * Math.PI / 180)</button>
+<button id="demo8" onclick="log()">LOG(10)</button>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+
+
+<script>
+const d = new Date();
+function pi()
+{
+    document.getElementById("demo1").innerHTML = Math.PI;
+}
+function round(){
+    document.getElementById("demo2").innerHTML = Math.round(4.4);
+}
+function pow(){
+document.getElementById("demo3").innerHTML = Math.pow(8, 2); 
+}
+function sqrt(){
+document.getElementById("demo4").innerHTML = Math.sqrt(64); 
+}
+function abs(){
+    document.getElementById("demo5").innerHTML = Math.abs(-4.7);
+}
+function sin(){
+    document.getElementById("demo6").innerHTML = Math.sin(90 * Math.PI / 180);
+}
+function cos(){
+    document.getElementById("demo7").innerHTML = Math.cos(0 * Math.PI / 180)
+}
+function log(){
+    document.getElementById("demo8").innerHTML = Math.log(10)
+}
+
+</script>
+
+</body>
+</html>

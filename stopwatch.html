@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Stop Watch</title>
+        <script>
+            count=0;
+            function counter(){
+               count++;
+               document.getElementById("demo").innerHTML=count;
+            }
+            function start(){
+                interval= setInterval(counter,1000);
+            }
+            function stop(){
+                clearInterval(interval);
+                count=0;//restart from 1
+            }
+        </script>
+    </head>
+    <body>
+        <H1>STOPWATCH</H1><BR/><BR/>
+        <h2><p id="demo"></p></h2>
+        <button onclick="start()">START</button><br/><br/>
+        <button onclick="stop()">STOP</button>
+
+    </body>
+</html>
